@@ -35,4 +35,14 @@ class CreditCheckTest < Minitest::Test
 
     assert_equal expected, new_card.subtracting_numbers_greater_than_nine_by_nine(odd_index_doubled_array)
   end
+
+  def test_that_all_numbers_are_summed_together
+    new_card = CreditCard.new("4929735477250543")
+
+    numbers_subtracted_by_nine_array = [3, 8, 5, 0, 5, 4, 7, 5, 4, 1, 3, 5, 9, 4, 9, 8]
+
+    expected = 80
+
+    assert_equal expected, new_card.sum_all_the_numbers(numbers_subtracted_by_nine_arry)
+  end
 end
