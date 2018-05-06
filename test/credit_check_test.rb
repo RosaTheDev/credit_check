@@ -37,7 +37,7 @@ class CreditCheckTest < Minitest::Test
   end
 
   def test_that_all_numbers_are_summed_together
-    new_card = CreditCard.new("4929735477250543")
+    new_card = CreditCheck.new("4929735477250543")
 
     numbers_subtracted_by_nine_array = [3, 8, 5, 0, 5, 4, 7, 5, 4, 1, 3, 5, 9, 4, 9, 8]
 
