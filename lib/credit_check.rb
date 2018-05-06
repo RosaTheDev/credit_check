@@ -23,4 +23,8 @@ class CreditCheck
       end
     end
   end
+
+  def sum_all_the_numbers(numbers_subtracted_by_nine_array)
+    subtracting_numbers_greater_than_nine_by_nine(numbers_subtracted_by_nine_array).sum
+  end
 end
