@@ -25,4 +25,14 @@ class CreditCheckTest < Minitest::Test
     expected = [3, 8, 5, 0, 5, 4, 7, 14, 4, 10, 3, 14, 9, 4, 9, 8]
     assert_equal expected, new_card.double_every_odd_index(new_card_array)
   end
+
+  def test_that_the_doubled_numbers_that_are_greater_than_nine_are_subtracted_by_nine
+    new_card = CreditCheck.new("4929735477250543")
+
+    odd_index_doubled_array = [3, 8, 5, 0, 5, 4, 7, 14, 4, 10, 3, 14, 9, 4, 9, 8]
+
+    expected = [3, 8, 5, 0, 5, 4, 7, 5, 4, 1, 3, 5, 9, 4, 9, 8]
+
+    assert_equal expected, new_card.subtracting_numb ers_greater_than_nine_by_nine(odd_index_doubled_array)
+  end
 end
