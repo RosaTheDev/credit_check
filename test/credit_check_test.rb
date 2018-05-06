@@ -45,4 +45,12 @@ class CreditCheckTest < Minitest::Test
 
     assert_equal expected, new_card.sum_all_the_numbers(numbers_subtracted_by_nine_array)
   end
+
+  def test_the_modulo_returns_zero
+    new_card = CreditCheck.new("4929735477250543")
+
+    numbers_subtracted_by_nine_array = [3, 8, 5, 0, 5, 4, 7, 5, 4, 1, 3, 5, 9, 4, 9, 8]
+
+    assert_equal 0, new_card.checking_modulo(numbers_subtracted_by_nine_array)
+  end
 end
