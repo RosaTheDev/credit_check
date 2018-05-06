@@ -13,4 +13,14 @@ class CreditCheck
       end
     end
   end
+
+  def subtracting_numbers_greater_than_nine_by_nine(odd_index_doubled_array)
+    odd_index_doubled_array.map do |odd_index_double|
+      if odd_index_double > 9
+        odd_index_double - 9
+      else
+        odd_index_double
+      end
+    end
+  end
 end
