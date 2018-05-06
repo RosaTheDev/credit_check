@@ -43,6 +43,6 @@ class CreditCheckTest < Minitest::Test
 
     expected = 80
 
-    assert_equal expected, new_card.sum_all_the_numbers(numbers_subtracted_by_nine_arry)
+    assert_equal expected, new_card.sum_all_the_numbers(numbers_subtracted_by_nine_array)
   end
 end
