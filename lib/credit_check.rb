@@ -31,4 +31,13 @@ class CreditCheck
   def will_the_modulo_return_zero(numbers_subtracted_by_nine_array)
     the_card_evaluates_to_zero_or_not = sum_all_the_numbers(numbers_subtracted_by_nine_array) % 10
   end
+
+  def checking_validity(numbers_subtracted_by_nine_array)
+    if will_the_modulo_return_zero(numbers_subtracted_by_nine_array) == 0
+    puts "Valid"
+  else
+    puts "Invalid Card Mother Fucker"
+    end
+  end
+
 end
