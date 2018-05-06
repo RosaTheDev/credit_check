@@ -33,6 +33,6 @@ class CreditCheckTest < Minitest::Test
 
     expected = [3, 8, 5, 0, 5, 4, 7, 5, 4, 1, 3, 5, 9, 4, 9, 8]
 
-    assert_equal expected, new_card.subtracting_numb ers_greater_than_nine_by_nine(odd_index_doubled_array)
+    assert_equal expected, new_card.subtracting_numbers_greater_than_nine_by_nine(odd_index_doubled_array)
   end
 end
