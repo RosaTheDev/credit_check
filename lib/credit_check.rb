@@ -27,4 +27,8 @@ class CreditCheck
   def sum_all_the_numbers(numbers_subtracted_by_nine_array)
     subtracting_numbers_greater_than_nine_by_nine(numbers_subtracted_by_nine_array).sum
   end
+
+  def will_the_modulo_return_zero(numbers_subtracted_by_nine_array)
+    the_card_evaluates_to_zero_or_not = sum_all_the_numbers(numbers_subtracted_by_nine_array) % 10
+  end
 end
